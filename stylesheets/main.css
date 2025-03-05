@@ -1,7 +1,10 @@
+
+/* Properties for body element */
+
 body{
     margin: 0;
     color: white;
-    background-color: #101010;
+    background-color: #151515;
     font-family: "Roboto", sans-serif;
 }
 
@@ -9,22 +12,25 @@ body{
     scroll-behavior: smooth;
 }
 
+/* Properties for navbar */
+
 nav{
     overflow: hidden;
     position: sticky;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
-    z-index: 1;
-    border-radius: 4vh;
 }
+
+/* Properties for lists */
 
 ul, li{
     display: flex;
-    gap: 12px;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 5vh;
     justify-content: center;
 }
+
+/* Properties for links */
 
 a{
     color: rgb(2, 120, 255);
@@ -32,76 +38,74 @@ a{
     transition: 0.1s;
 }
 
+/* Properties for links when you hover them */
+
 a:hover{
-    color: red;
-    transform: scale(1.2);
+    color: white;
 }
 
-a:active{
-    color: black;
-    transform: scale(0.8);
-}
+/* idk what is this but Yet another flex container properties*/
 
-.introduction-container{
-    font-size: 1vh;
+.flex-items{
+    margin: 10vh;
     display: flex;
-    margin: 5vh;
-    padding-left: 5vh;
-    margin-top: 30vh;
+    align-items: center;
     flex-direction: column;
-    background-color: #303030;
-    border: 3px solid #202020;
-    border-top-left-radius: 2vh;
-    border-top-right-radius: 2vh;
-    animation-name: boot;
-    animation-duration: 0.3s;
+}
+
+
+/* Properties for the container for the introduction heading and other
+/* sections */
+
+.container{
+    display: flex;
+    flex-direction: column;
     word-break: break-all;
 }
 
-.links{
+.introduction-heading{
+    text-align: center;
+    margin-bottom: -5vh;
+    font-size: 3vh;
+}
+
+.introduction-p{
+    font-size: 2vh;
+    margin: 2vh;
+    color: #808080;
+    text-align: center;
+}
+
+
+/* Flex container properties for the buttons */
+
+.introduction-buttons{
     display: flex;
-    margin: 5vh;
-    padding-left: 5vh;
-    margin-top: -5vh;
-    border: 3px solid #202020;
-    border-bottom-left-radius: 3vh;
-    border-bottom-right-radius: 3vh;
+    justify-content: center;
+    gap: 5vh;
 }
 
-@keyframes boot {
-    0%{transform: translateY(100px); opacity: 0;}
+/* News date properties */
+
+.news-p{
+    font-size: 2vh;
+    margin-bottom: -3vh;
+    text-align: center;
 }
 
-@keyframes boot1 {
-    0%{transform: translateX(100px); opacity: 0;}
+/* Padding for the sections */
+
+section{
+    padding-bottom: 20vh;
 }
 
-@keyframes boot2 {
-    0%{transform: translateX(-100px); opacity: 0;}
-}
-
-h1{
-    animation-name: boot1;
-    animation-duration: 0.6s;
-}
-
-.pfp{
-    margin: 1vh;
-    border-radius: 6vh;
-    border: 3px solid #202020;
-    animation-name: boot2;
-    animation-duration: 0.8s;
-}
-
-hr{
-    border: 2px white solid;
-    border-radius: 5vh;
-}
+/* Align text to the center for the footer */
 
 footer{
-    background-color: #202020;
-    padding: 1vh;
+    text-align: center;
 }
+
+/* Properties for buttons */
 
 button{
     padding: 1vh;
@@ -109,22 +113,64 @@ button{
     border: none;
     background-color: #096cdd;
     color: white;
-    transition: 0.1s;
+    transition: 0.2s;
 }
+
+/* Properties for youtube button */
 
 .button-yt{
     background-color: #ff0000;
 }
 
 button:hover{
-    transform: scale(1.1);
     cursor: pointer;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
-button:active{
-    transform: scale(0.8);
-}
+/* Properties for FA icons */
 
 i{
-    font-size: 3vh;
+    padding-right: 10px;
+}
+
+/* Typewriter text animation sadly doesnt work correctly */
+
+.skills, span::before{
+    content: "15 Year old";
+    animation: words 130s infinite;
+}
+
+.skills, span::after{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(22) alternate infinite, cursor 0.5s infinite alternate;
+    animation-delay: inherit;
+    border-right: 4px solid #FFFFFF;
+}
+
+@keyframes typing {
+    /* Typing animation */
+    0% {
+      width: 0
+    }
+    50% {
+      width: 100%
+    }
+}
+
+@keyframes words {
+    /* Text content */
+    10%,20%{content: "Juniour Web Developer";}
+    30%,40%{content: "Juniour Godot programmer";}
+    40%,50%{content: "Gamer";}
+}
+
+@keyframes cursor {
+    to{
+        border-color: #ff0000;
+        border-width: 1px;
+    }
 }
