@@ -4,7 +4,7 @@
     --button-color-hovered: white;
     --link-color-hovered: white;
     --button-text-color: black;
-    --icon-color-hovered: 0;
+    --icon-color: 0;
 }
 
 .lightmode{
@@ -13,7 +13,7 @@
     --button-color-hovered: black;
     --button-text-color: white;
     --link-color-hovered: black;
-    --icon-color-hovered: 1;
+    --icon-color: 1;
 }
 
 body{

@@ -1,0 +1,8 @@
+{
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.icons": true,
+    "workbench.reduceMotion": "on",
+    "breadcrumbs.showClasses": true,
+    "window.commandCenter": true
+}

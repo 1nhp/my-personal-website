@@ -31,6 +31,12 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: brightness(var(--icon-color-hovered));
+    filter: brightness(var(--icon-color));
     transition: 0.2s;
+}
+
+svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
