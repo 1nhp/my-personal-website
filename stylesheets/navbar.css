@@ -1,0 +1,15 @@
+nav{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+ul, li{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vh;
+    justify-content: center;
+    padding: 1vh;
+}
