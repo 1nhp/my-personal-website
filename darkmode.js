@@ -35,7 +35,7 @@ function showiframe() {
 function prepareFrame() {
   var ifrm = document.createElement("iframe");
   const myDiv = document.querySelector(".giprn");
-  ifrm.setAttribute("src", "https://www.youtube.com/embed/Mbm9DDlgBo0");
+  ifrm.setAttribute("src", "https://www.youtube.com/embed/69uOiPhOwp4");
   ifrm.style.width = "100%";
   ifrm.style.height = "400px";
   myDiv.appendChild(ifrm);

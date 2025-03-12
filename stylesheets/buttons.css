@@ -54,5 +54,4 @@ button:hover{
 
 .img1:hover{
     transform: scale(1.03, 1.03);
-    filter: brightness(120%);
 }
