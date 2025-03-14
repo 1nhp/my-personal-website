@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="stylesheets/buttons.css">
         <link rel="stylesheet" href="stylesheets/containers.css">
         <link rel="stylesheet" href="stylesheets/typewriter-effect.css">
-        <script type="text/javascript" src="darkmode.js" defer></script>
+        <script type="text/javascript" src="scripts/darkmode-switch.js" defer></script>
+        <script type="text/javascript" src="scripts/clickable-iframe.js" defer></script>
+        <script type="text/javascript" src="scripts/loading.js" defer></script>
         <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
         <link rel="icon" href="images/PFP_PNG.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,10 +43,10 @@
         <section class="introduction">
             <div class="flex-items">
                 <div class="container">
-                    <div class="introduction-heading">
+                    <div class="c-heading">
                         <h1>Hi im Maritosu</h1>
                     </div>
-                    <div class="introduction-p">
+                    <div class="c-p">
                     <p class="skills-text"><span class="skills"></span></p>
                 </div>
             <div class="introduction-buttons">
@@ -60,13 +62,13 @@
         <div class="flex-items">
             <div class="container">
                 <div id="news"></div>
-                <div class="introduction-heading">
+                <div class="c-heading">
                     <h1>News</h1>
             </div>
                 <div class="news-p">
                 <p>February 27, 2025</p>
             </div>
-            <div class="introduction-p">
+            <div class="c-p">
                 <p>Hello everyone recently i've been thinking about creating my personal website in html and css entirely from ground up *again and again* theres not much on the website right now but i may plan on adding what game im 100% right now etc so stay tuned!</p>
             </div>
         </div>
@@ -77,16 +79,17 @@
         <div class="flex-items">
             <div class="container">
                 <div id="goodies"></div>
-                <div class="introduction-heading">
+                <div class="c-heading">
                     <h1>Goodies</h1>
             </div>
-                <div class="news-p">
+                <div class="c-p">
                 <p>Here you can find my savefiles and stuff like that</p>
                 <div class="introduction-buttons">
                     <a href="https://drive.google.com/drive/folders/1jgvTJ08s2z48w0G0ZngBCJa1VZyW9x_5?usp=sharing"><button class="button-yt"><i><img src="images/save_icon.svg"></i></img>My savefiles Google drive repository</button></a>
                     <a href="software_thatiuse.html"><button><i><img src="images/save_icon.svg"></i>Software i use</button></a>
                     </div>
-                <div class="introduction-p">
+                </div>
+                <div class="news-p">
                     <p>NOTE: Burnout 3: Takedown savefile wont be uploaded there because theres personal information like Email Address and password there once ill sort out the problem ill upload the savefile</p>
                 </div>
             </div>
@@ -97,7 +100,7 @@
         <div class="flex-items">
             <div class="container">
                 <div class="giprn">
-                    <div class="introduction-heading">
+                    <div class="c-heading">
                         <h1>Game im playing right now</h1>
                         <img class="img1" loading="lazy" src="https://dummyimage.com/600x400/000/fff" width="100%" onclick="showiframe()">
                     </div>
