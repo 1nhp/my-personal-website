@@ -1,0 +1,58 @@
+button{
+    padding: 1vh;
+    border-radius: 5px;
+    border: none;
+    background-color: #096cdd;
+    color: white;
+    transition: 0.1s;
+    border: 2.9px solid #096cdd;
+    box-shadow: 0px 2px 5px 0px #000000;
+}
+
+.theme-switch{
+    border-radius: 5vh;
+    background-color: #222020;
+    border-color: #222020;
+}
+
+.goup-button{
+    border-radius: 5vh;
+    background-color: rgb(34, 32, 32);
+    fill: rgb(255, 0, 0);
+    border-color: #222020;
+}
+
+.theme-switch svg:last-child{
+    display: none;
+}
+
+.theme .theme-switch svg:first-child{
+    display: none;
+}
+
+.theme .theme-switch svg:last-child{
+    display: block;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    border-color: white;
+}
+
+button:active{
+    cursor: pointer;
+    transform: scale(0.9, 0.9);
+    filter: blur(1px);
+}
+
+.img1{
+    border-radius: 3vh;
+    transition: 0.1s;
+    opacity: 1;
+}
+
+.img1:hover{
+    transform: scale(1.03, 1.03);
+    filter: brightness(120%);
+}

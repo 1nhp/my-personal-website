@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
-    body = document.querySelector("body");
+    loading = document.querySelector(".loading");
     setTimeout(() => {
-        body.style.opacity = 1
-      }, "200");
+        loading.remove();
+      }, "300");
   });

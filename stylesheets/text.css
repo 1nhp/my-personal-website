@@ -1,0 +1,46 @@
+a{
+    color: rgb(2, 120, 255);
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+a:active{
+    transform: scale(0.9);
+    filter: blur(1px);
+}
+
+.news-p{
+    font-size: 2vh;
+    margin-bottom: -3vh;
+    text-align: center;
+}
+
+.c-p{
+    font-size: 2vh;
+    margin: 1vh;
+    color: #808080;
+    text-align: center;
+}
+
+.c-heading{
+    text-align: center;
+    margin-bottom: -5vh;
+    font-size: 3vh;
+}
+
+i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
