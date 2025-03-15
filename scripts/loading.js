@@ -3,5 +3,5 @@ window.addEventListener("load", () => {
     loading.style.opacity = 0;
     setTimeout(() => {
         loading.remove();
-    }, 600);
+    }, 0);
 });

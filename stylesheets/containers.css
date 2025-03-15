@@ -1,7 +1,8 @@
 .flex-items {
-  margin: 1vh;
+  margin: 15vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -71,6 +72,18 @@
 
 .loading-img{
   animation: loading 1s infinite;
+}
+
+.news{
+  overflow-y: scroll;
+  max-height: 35vh;
+  border: 0.5px solid rgb(214, 214, 214);
+  border-radius: 2vh;
+  resize: both;
+}
+
+article{
+  margin-bottom: 15vh;
 }
 
 @keyframes loading{

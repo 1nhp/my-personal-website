@@ -22,8 +22,8 @@ body{
 }
 
 *{
-    scroll-behavior: smooth;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 video{
