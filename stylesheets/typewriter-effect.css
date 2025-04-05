@@ -1,39 +1,33 @@
-.skills, span::before{
+.skills, .skills::before{
     content: "";
     animation: words 20s infinite;
 }
 
-.skills, span::after{
+.skills, .skills::after{
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 2s steps(20) alternate infinite, cursor 1s steps(2) infinite;
+    animation: typewriter 2s steps(15) alternate infinite, 
+    blink 1s infinite;
     border-right: 1px solid #FFFFFF;
 }
 
-@keyframes typing {
-    /* Typing animation */
-    0% {
-      width: 0
-    }
-    70% {
-      width: 100%
-    }
+@keyframes typewriter {
+    0%{width: 0;}
+    70%{width: 100%;}
 }
 
 @keyframes words {
     /* Text content */
-    0%,20%{content: "15 Year old";}
-    21%,40%{content: "Juniour Web Developer";}
-    41%,60%{content: "Juniour Godot Programmer";}
-    61%,80%{content: "Gamer";}
-    81%,100%{content: "Small Content Creator";}
+    0%,20%{content: "Im 15 Year old";}
+    21%,40%{content: "Im Juniour Web Developer";}
+    41%,60%{content: "Im Juniour Godot Programmer";}
+    61%,80%{content: "Im Gamer";}
+    81%,100%{content: "Im Small Content Creator";}
 }
 
-@keyframes cursor {
-    to{
-        border-style: none;
-    }
+@keyframes blink {
+    to{border-style: none;}
 }
 
 .skills-text{

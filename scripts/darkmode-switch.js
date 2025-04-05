@@ -1,5 +1,5 @@
-const themeSwitch = document.querySelector('.theme-switch');
+const themeButton = document.querySelector(".theme-switch")
 
-themeSwitch.addEventListener('click', () => {
-  document.body.classList.toggle('theme');
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('theme');
 });

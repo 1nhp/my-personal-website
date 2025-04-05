@@ -1,7 +1,8 @@
 window.addEventListener("load", () => {
-    loading = document.querySelector(".loading");
-    loading.style.opacity = 0;
-    setTimeout(() => {
-        loading.remove();
-    }, 500);
+    const loading1 = document.querySelector(".loading");
+    loading1.style.opacity = 0;
+
+    setTimeout ( () => {
+        loading1.remove(); },
+    500);
 });
