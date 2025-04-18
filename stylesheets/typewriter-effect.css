@@ -21,8 +21,7 @@
     /* Text content */
     0%,20%{content: "Im 15 Year old";}
     21%,40%{content: "Im Juniour Web Developer";}
-    41%,60%{content: "Im Juniour Godot Programmer";}
-    61%,80%{content: "Im Gamer";}
+    41%,60%{content: "Im Gamer";}
     81%,100%{content: "Im Small Content Creator";}
 }
 
